@@ -1,0 +1,121 @@
+*{
+    margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+h1{
+    color: #330055;
+    font-weight: 300;
+}
+
+.content{
+    padding: 20px 0;
+    width:100%;
+    margin:0 auto;
+    text-align: center;
+    overflow: hidden;
+}
+.content:nth-child(odd){
+    background-color:#f2e7ce;
+}
+.article{
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.background{
+    position: relative;
+    height:660px;
+    background-image: url(../images/background.jpg); 
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    overflow: hidden;
+
+}
+
+.logo{
+    height: 300px;
+    width: 100%;
+    background-image: url(../images/Logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 5%;
+}
+
+.fore{
+    height:700px;
+    width:100%;
+    background-image: url(../images/foreground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: absolute;
+    bottom: -5px;
+}
+
+.scope{
+    margin: 50px auto;
+    width: 400px;
+    height: 400px;
+    background-image: url(../images/hartej-background.jpg);
+    background-color: #b46f60;
+    background-position: center;
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-radius: 100%;
+}
+
+/* Project Grid */
+
+.project figure{
+    margin: 20px;
+    position: relative;
+    opacity: 0;
+    transform: translateX(-30px);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+
+}
+
+.project .show-class{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+img{
+  width: 500px;
+  border-radius: 10px;
+}
+.row-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1070px) and (min-width: 800px) {
+   img{
+     width: 380px;
+     border-radius: 10px;
+   } 
+}
+
+@media only screen and (max-width: 801px) {
+    .row-image{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+   img{
+     width: 350px;
+     border-radius: 10px;
+   } 
+}
