@@ -111,10 +111,11 @@ img{
 
 @media only screen and (max-width: 801px) {
     .scope{
-        display: block;
-    margin: 40px auto;
-    background-size: 400px;
-     background-position: center center fixed;
+        margin: 40px auto;
+        background-size: 300px;
+        background-position:center;
+        background-attachment: scroll;
+        background-position-y: 5px;
     }
     .row-image{
         display: flex;
