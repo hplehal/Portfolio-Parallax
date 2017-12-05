@@ -15,18 +15,19 @@ h1{
 
 .content{
     padding: 50px 0;
-
     width:100%;
     margin:0 auto;
     text-align: center;
     overflow: hidden;
     background-color: #f1f1f1;
 }
+
 .content:nth-child(odd){
     background-color:#f8f1e3;
 }
+
 .article{
-    width: 300px;
+    width: 400px;
     text-align: center;
     margin: 0 auto;
 }
@@ -77,6 +78,18 @@ h1{
     border-radius: 100%;
 }
 /*Intro Page */
+h2{
+    padding-bottom :20px;
+}
+.intro-p{
+    font-size: 18px;
+    line-height: 30px;
+    color:#666;
+    font-weight: 300;
+}
+strong{
+    color:#c99065;
+}
 .skills{
     color:#b46f60;
     max-width: 700px;
@@ -96,22 +109,43 @@ h1{
     width:20px;
     height: 20px;
     display:inline-block;
-    background-color:#751ab1; 
+    background-color:#330055; 
     margin-right:5px;
     border-radius:50%;
     z-index: -1;
 }
 
 .skill-icon span:after{
-  content:'';
-  display:block;
-  width:17px;
-  height: 17px;
-  background:#f1f1f1;
-  margin:1px;
-  border-radius:50%;
+    content:'';
+    display:block;
+    width:17px;
+    height: 17px;
+    background:#330055;
+    margin:1px;
+    border-radius:50%;
 }
+.skill-8 span:nth-child(n+9):after{
+    background:#f1f1f1;
+} 
+
+.skill-6 span:nth-child(n+7):after{
+    background:#f1f1f1;
+} 
+
+.skill-7 span:nth-child(n+8):after{
+    background:#f1f1f1;
+} 
+
+.skill-9 span:nth-child(n+10):after{
+    background:#f1f1f1;
+} 
 /* Project Grid */
+a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 100;
+}
 
 .project figure{
     margin: 20px;
@@ -131,8 +165,8 @@ h1{
 }
 
 img{
-  width: 500px;
-  border-radius: 10px;
+    width: 500px;
+    border-radius: 10px;
 }
 .row-image{
     display: flex;
@@ -241,7 +275,7 @@ ul li .fa{
     transition: .3s ease-in-out;
 }
 ul li:hover .fa{
-color: #fff;
+    color: #fff;
 }
 
 /* Form */
@@ -314,16 +348,16 @@ textarea{
     font-size: 18px;
 }
 .message{
-     display: flex;
+    display: flex;
     flex-direction: column;
-     justify-content: space-between;
+    justify-content: space-between;
 }
 
 
 @media only screen and (max-width: 1070px) and (min-width: 800px) {
-   img{
-     width: 380px;
-     border-radius: 10px;
+    img{
+        width: 380px;
+        border-radius: 10px;
    } 
 }
 
@@ -332,7 +366,7 @@ textarea{
         text-decoration: none;
         color: #b46f60;
         font-family: 'Montserrat Alternates', sans-serif;
-        font-size: 36px;
+        font-size: 32px;
         font-weight: 100;
     }
     .scope{
@@ -345,8 +379,7 @@ textarea{
     .row-image{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        
+        justify-content: center; 
     }
 
    img{
