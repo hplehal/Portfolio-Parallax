@@ -9,7 +9,7 @@ $(window).scroll(function(){
     }
 
     if(wScroll > $('.project').offset().top-($(window).height()/1.2)){
-        console.log("hello");
+        // console.log("hello");
         $('.project figure').each(function(i){
             setTimeout(function(){
                 $('.project figure').eq(i).addClass('show-class');
